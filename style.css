@@ -1,0 +1,29 @@
+body {
+    background-color: #F1F1F1;
+}
+.contact, .contact a, .contact a:hover {
+    text-decoration: none;
+    color: #000;
+}
+.jumbotron {
+    background-color: #d6d6d6;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.imageLine {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+    cursor: pointer;
+}
+
+.container{
+	padding: 0 50px 0 50px;
+}
+
+form{
+	margin: auto;
+	max-width: 70%;
+}
