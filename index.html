@@ -45,18 +45,28 @@
 	   }, //remember to add a comma after each event object, unless its the last one
 	   {
 	     "id": 2,
-	     "name": "Test Event 2",
-	     "startdate": "2017-10-20",
+	     "name": "VoW Monthly Meeting",
+	     "startdate": "2017-11-9",
 	     "enddate": "",
-	     "starttime": "12:00",
-	     "endtime": "2:00",
-	     "color": "#EF44EF",
+	     "starttime": "18:30",
+	     "endtime": "20:30",
+	     "color": "#FFB128",
 	     "url": ""
 	   },
 	   {
 	     "id": 3,
+	     "name": "Christmas",
+	     "startdate": "2017-12-25",
+	     "enddate": "",
+	     "starttime": "",
+	     "endtime": "",
+	     "color": "#ff9393",
+	     "url": ""
+	   },
+	   {
+	     "id": 4,
 	     "name": "VoW Monthly Meeting",
-	     "startdate": "2017-11-9",
+	     "startdate": "2018-1-11",
 	     "enddate": "",
 	     "starttime": "18:30",
 	     "endtime": "20:30",
@@ -81,60 +91,62 @@
 	</script>
 </head>
 <body onunload="hashReset()">
-	<nav class="navbar navbar-toggleable-md navbar-light fixed-top" style="background-color: #e3f2fd;">
+	<nav class="navbar navbar-toggleable-md navbar-light fixed-top" style="background-color: #F9B720;">
 		<button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarNavAltMarkup" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
 		<h2 class="navbar-brand mb-0">VoW</h2>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a class="nav-item nav-link active" href="#home" id="home">Home</a> <a class="nav-item nav-link" href="#events" id="events">Events</a> <a class="nav-item nav-link" href="#about" id="about">About</a> <a class="nav-item nav-link" href="#contact" id="contact">Contact</a>
+				<a class="nav-item nav-link active" href="#home" id="home">Home</a>
+				<li class="nav-item dropdown">
+					<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle nav-item" data-toggle="dropdown" href="" id="drop">Events</a>
+					<div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+				<a class="dropdown-item nav-item" href="#OngoingProjects" id="onProjects">Ongoing Projects</a>
+				<a class="dropdown-item nav-item" href="#UpcomingEvents" id="upProjects">Upcoming Events</a>
+				<a class="dropdown-item nav-item" href="#Calendar" id="events">Calendar</a>
+					</div>
+				</li>
+				<a class="nav-item nav-link" href="#about" id="about">About</a>
+				<a class="nav-item nav-link" href="#partners" id="partners">Partners</a>
+				<a class="nav-item nav-link" href="#contact" id="contact">Contact</a>
 			</div>
 		</div>
-	</nav><br>
+	</nav>
+	<br>
 	<br>
 	<div class="container home">
 		<br>
 		<h1 class="display-2 text-center">Vision of Wallkill</h1>
 		<hr>
-		<p class="display-4 text-center">Learn what we are about!</p><br>
-		<div>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum in tortor et cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum mauris dui, convallis in mi ac, porttitor eleifend dui. Duis eu felis ipsum. Curabitur non fringilla nisl. Mauris maximus turpis tincidunt augue ornare vehicula. Proin commodo, lorem at auctor volutpat, ipsum quam tincidunt est, id molestie lacus orci sit amet augue. Duis volutpat malesuada mauris, quis consequat turpis vulputate in. Aenean pellentesque arcu orci, non lobortis eros tempor porta. Sed maximus turpis vitae dignissim feugiat. Etiam ligula dolor, feugiat sit amet interdum sit amet, ullamcorper non urna. Phasellus tincidunt, lacus vitae molestie sagittis, dui ligula vulputate augue, in condimentum nunc risus quis sapien. Donec pharetra lacus magna, sit amet iaculis magna cursus eu. Donec eu ante nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam ut aliquet justo. Donec volutpat quam urna.
+		<p class="display-4 text-center">A group of people committed to creating a positive change in Wallkill.</p><br>
+		<div class="p-4">
+			VOW is a community improvement group open to new faces and new perspectives. We are committed to creating a unified Wallkill, where all residents take pride in their community and promote changes to the hamlet to make it a more friendly, vibrant place to call home. VOW is a catalyst for innovative and practical ideas that focus on using the collaboration of various local groups and businesses for a better Wallkill. We see a future where residents and businesses will invest in our community to create a momentum of positive change bringing about a destination that nourishes our sense of welcoming, safety, acceptance, and belonging.
 		</div><br>
-		<ul>
-			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-			<li>Morbi at arcu fermentum ex fermentum blandit in et mauris.</li>
-			<li>Praesent commodo dui ut tortor convallis elementum.</li>
-			<li>Etiam tristique dui et turpis ultrices eleifend.</li>
-			<li>Mauris a turpis et dui fermentum dignissim a id neque.</li>
-			<li>Aenean at lorem a felis pellentesque congue.</li>
-		</ul>
-		<div>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum in tortor et cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum mauris dui, convallis in mi ac, porttitor eleifend dui. Duis eu felis ipsum. Curabitur non fringilla nisl. Mauris maximus turpis tincidunt augue ornare vehicula. Proin commodo, lorem at auctor volutpat, ipsum quam tincidunt est, id molestie lacus orci sit amet augue. Duis volutpat malesuada mauris, quis consequat turpis vulputate in. Aenean pellentesque arcu orci, non lobortis eros tempor porta. Sed maximus turpis vitae dignissim feugiat. Etiam ligula dolor, feugiat sit amet interdum sit amet, ullamcorper non urna. Phasellus tincidunt, lacus vitae molestie sagittis, dui ligula vulputate augue, in condimentum nunc risus quis sapien. Donec pharetra lacus magna, sit amet iaculis magna cursus eu. Donec eu ante nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam ut aliquet justo. Donec volutpat quam urna.
-		</div><br>
-		<ul>
-			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-			<li>Morbi at arcu fermentum ex fermentum blandit in et mauris.</li>
-			<li>Praesent commodo dui ut tortor convallis elementum.</li>
-			<li>Etiam tristique dui et turpis ultrices eleifend.</li>
-			<li>Mauris a turpis et dui fermentum dignissim a id neque.</li>
-			<li>Aenean at lorem a felis pellentesque congue.</li>
-		</ul>
-		<div>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum in tortor et cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum mauris dui, convallis in mi ac, porttitor eleifend dui. Duis eu felis ipsum. Curabitur non fringilla nisl. Mauris maximus turpis tincidunt augue ornare vehicula. Proin commodo, lorem at auctor volutpat, ipsum quam tincidunt est, id molestie lacus orci sit amet augue. Duis volutpat malesuada mauris, quis consequat turpis vulputate in. Aenean pellentesque arcu orci, non lobortis eros tempor porta. Sed maximus turpis vitae dignissim feugiat. Etiam ligula dolor, feugiat sit amet interdum sit amet, ullamcorper non urna. Phasellus tincidunt, lacus vitae molestie sagittis, dui ligula vulputate augue, in condimentum nunc risus quis sapien. Donec pharetra lacus magna, sit amet iaculis magna cursus eu. Donec eu ante nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam ut aliquet justo. Donec volutpat quam urna.
-		</div><br>
-		<ul>
-			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-			<li>Morbi at arcu fermentum ex fermentum blandit in et mauris.</li>
-			<li>Praesent commodo dui ut tortor convallis elementum.</li>
-			<li>Etiam tristique dui et turpis ultrices eleifend.</li>
-			<li>Mauris a turpis et dui fermentum dignissim a id neque.</li>
-			<li>Aenean at lorem a felis pellentesque congue.</li>
-		</ul>
+
+<div><blockquote class="blockquote text-right">
+  <p class="mb-0">"It takes a village to raise a child. But it takes a community to raise a village."</p>
+  <footer class="blockquote-footer">Barbara Feinman in <cite title="Source Title">It takes a village</cite></footer>
+</blockquote></div>
 	</div><!--end page div-->
+
+	<div class="container onProjects hidden-xs-up">
+		<br>
+		<h1 class="display-2 text-center">Ongoing Projects</h1>
+		<hr>
+		<p class="display-4 text-center">See what we have been up to!</p>
+	</div><!--end page div-->
+
+	<div class="container upProjects hidden-xs-up">
+		<br>
+		<h1 class="display-2 text-center">Upcoming Events</h1>
+		<hr>
+		<p class="display-4 text-center"></p>
+	</div><!--end page div-->
+
 	<div class="container events hidden-xs-up">
 		<br>
-		<h1 class="display-2 text-center">Events</h1>
+		<h1 class="display-2 text-center">Calendar</h1>
 		<hr>
-		<p class="display-4 text-center">Join us for our events!</p><br>
+		<p class="display-4 text-center">Our schedule at a glance!</p><br>
 		<div class="monthly" id="mycalendar"></div>
 	</div><!--end page div-->
 	<div class="container about hidden-xs-up">
@@ -163,13 +175,38 @@
 			</div>
 		</div>
 		<hr class="imageLine">
-	</div>
+	</div><!--end page div-->
+
+	<div class="container partners hidden-xs-up">
+		<br>
+		<h1 class="display-2 text-center">Partners</h1>
+		<hr>
+		<p class="display-4 text-center">Our partners in the community!</p><br>
+		<div class="row">
+			<div class="col-md-5">
+				<div class="list-group">
+					<a href="http://www.wallkillpubliclibrary.org" class="list-group-item list-group-item-action">Wallkill Public Library</a>
+					<a href="http://www.cleansweepny.org" class="list-group-item list-group-item-action">Clean Sweep</a>
+					<a href="https://www.facebook.com/events/1941433419465051" class="list-group-item list-group-item-action">Main Street Revitalization Committee</a>
+					<a href="http://www.thewaldenhouse.org" class="list-group-item list-group-item-action">Historical Society</a>
+					<a href="http://www.shawangunk.org/clubs/wallkill-womans-club.html" class="list-group-item list-group-item-action">Wallkill Woman's Club</a>
+					<a href="http://e-clubhouse.org/sites/wallkillny" class="list-group-item list-group-item-action">Lions Club</a>
+					<a href="https://www.troopwebhost.org/Troop76Wallkill/Index.htm" class="list-group-item list-group-item-action">Scouts</a>
+					<a href="http://www.shawangunk.org/" class="list-group-item list-group-item-action">Town of Shawangunk</a>
+				</div>
+			</div>
+			<div class="col-md-7">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum in tortor et cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum mauris dui, convallis in mi ac, porttitor eleifend dui. Duis eu felis ipsum. Curabitur non fringilla nisl. Mauris maximus turpis tincidunt augue ornare vehicula. Proin commodo, lorem at auctor volutpat, ipsum quam tincidunt est, id molestie lacus orci sit amet augue. Duis volutpat malesuada mauris, quis consequat turpis vulputate in.
+			</div>
+		</div>
+	</div><!--end page div-->
+
 	<div class="container contact hidden-xs-up">
 		<br>
 		<h1 class="display-2 text-center">Contact</h1>
 		<hr>
 		<p class="display-4 text-center">Need to get in touch?</p><br>
-		<form action="contact.php" class="form-horizontal" method="post">
+		<form action="https://formspree.io/dominickcolandreadev@gmail.com" class="form-horizontal" method="POST">
 			<div class="form-group">
 				<input class="form-control" id="name" name="name" placeholder="Name" required="" type="text">
 			</div>
@@ -183,20 +220,18 @@
 		<br>
 		<br>
 		<footer>
-			<div class="row jumbotron">
-				<div class="col-md-5">
-					<h1><a href="#"><i aria-hidden="true" class="fa fa-envelope"></i></a></h1>
-					<h4>example@gmail.com</h4>
+				<div class="text-center center-block">
+				<p class="lead text-center">Contact Information</p>
+				<hr>
 				</div>
-				<div class="col-md-4">
-					<h1><a href="https://www.facebook.com/Vision-of-Wallkill-590464294363315/"><i aria-hidden="true" class="fa fa-facebook-official"></i></a></h1>
-					<h4>Facebook</h4>
+
+				<div class="text-center center-block p-4">
+				<a href="https://www.facebook.com/Vision-of-Wallkill-590464294363315/"><i aria-hidden="true" class="fa fa-facebook-official fa-2x"> Facebook</i></a>
 				</div>
-				<div class="col-md-3">
-					<h1><a href="#"><i aria-hidden="true" class="fa fa-phone-square"></i></a></h1>
-					<h4>845-xxx-xxxx</h4>
+
+				<div class="text-center center-block p-4">
+					<i aria-hidden="true" class="fa fa-envelope fa-2x"> visionofwallkill@gmail.com</i>
 				</div>
-			</div>
 		</footer>
 	</div><!--end page div-->
 </body>
