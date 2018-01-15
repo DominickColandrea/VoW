@@ -8,13 +8,33 @@ $("#home").click(function(){
 	location.replace("#home");
 })//end home click
 
+$("#upProjects").click(function(){
+	$(".nav-item").removeClass("active");
+	$("#upProjects").addClass("active");
+	$("#drop").addClass("active");
+	$(".container").addClass("hidden-xs-up");
+	$(".upProjects").removeClass("hidden-xs-up");
+	location.replace("#UpcomingEvents");
+})//end event click
+
+$("#onProjects").click(function(){
+	$(".nav-item").removeClass("active");
+	$("#onProjects").addClass("active");
+	$("#drop").addClass("active");
+	$(".container").addClass("hidden-xs-up");
+	$(".onProjects").removeClass("hidden-xs-up");
+	location.replace("#OngoingProjects");
+})//end event click
+
 $("#events").click(function(){
 	$(".nav-item").removeClass("active");
 	$("#events").addClass("active");
+	$("#drop").addClass("active");
 	$(".container").addClass("hidden-xs-up");
 	$(".events").removeClass("hidden-xs-up");
-	location.replace("#events");
+	location.replace("#Calendar");
 })//end event click
+
 
 $("#about").click(function(){
 	$(".nav-item").removeClass("active");
@@ -22,6 +42,14 @@ $("#about").click(function(){
 	$(".container").addClass("hidden-xs-up");
 	$(".about").removeClass("hidden-xs-up");
 	location.replace("#about");
+})//end about click
+
+$("#partners").click(function(){
+	$(".nav-item").removeClass("active");
+	$("#partners").addClass("active");
+	$(".container").addClass("hidden-xs-up");
+	$(".partners").removeClass("hidden-xs-up");
+	location.replace("#partners");
 })//end about click
 
 $("#contact").click(function(){
@@ -36,4 +64,4 @@ $("#contact").click(function(){
 
 function hashReset(){
 	
-}
+} //remember to fix this
