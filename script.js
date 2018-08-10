@@ -8,24 +8,6 @@ $("#home").click(function(){
 	location.replace("#home");
 })//end home click
 
-$("#upProjects").click(function(){
-	$(".nav-item").removeClass("active");
-	$("#upProjects").addClass("active");
-	$("#drop").addClass("active");
-	$(".container").addClass("hidden-xs-up");
-	$(".upProjects").removeClass("hidden-xs-up");
-	location.replace("#UpcomingEvents");
-})//end event click
-
-$("#onProjects").click(function(){
-	$(".nav-item").removeClass("active");
-	$("#onProjects").addClass("active");
-	$("#drop").addClass("active");
-	$(".container").addClass("hidden-xs-up");
-	$(".onProjects").removeClass("hidden-xs-up");
-	location.replace("#OngoingProjects");
-})//end event click
-
 $("#events").click(function(){
 	$(".nav-item").removeClass("active");
 	$("#events").addClass("active");
@@ -34,15 +16,6 @@ $("#events").click(function(){
 	$(".events").removeClass("hidden-xs-up");
 	location.replace("#Calendar");
 })//end event click
-
-
-$("#about").click(function(){
-	$(".nav-item").removeClass("active");
-	$("#about").addClass("active");
-	$(".container").addClass("hidden-xs-up");
-	$(".about").removeClass("hidden-xs-up");
-	location.replace("#about");
-})//end about click
 
 $("#partners").click(function(){
 	$(".nav-item").removeClass("active");
